@@ -1,0 +1,84 @@
+body {
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1{
+    font-size: clamp(1rem, -0.8rem + 9.4vw, 5rem);
+    padding-right: 10px;
+}
+
+#title{
+}
+
+#title div {
+    float: top;
+}
+
+/**NAVBAR------------------------------------------------------------**/
+#navbar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    transition: top 0.3s;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar::-webkit-scrollbar {
+    display: none;
+}
+
+/**GRID--------------------------------------------------------------**/
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.grid-item div {
+    display: flex;
+    padding-right: 3px;
+    padding-bottom: 3px;
+}
+
+.grid-item ul{
+    display:contents;
+    list-style: none;
+}
+
+.grid-item img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+}
