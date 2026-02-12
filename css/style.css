@@ -41,7 +41,6 @@ h1{
 
 #navbar :hover{
     background-color: rgb(14, 14, 14);
-    font-size: 18px;
 }
 
 #navbar::-webkit-scrollbar {
