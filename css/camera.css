@@ -8,6 +8,7 @@ h2 {
 
 .section{
     height: fit-content;
+    background-color: blueviolet;
 }
 
 .grid {
@@ -18,17 +19,31 @@ h2 {
 }
 
 .text {
-    grid-area: 1/1/2/2;
     height: fit-content;
     padding-left: 10px;
+}
+
+.rightT{
+    grid-area: 1/1/2/2;
+}
+
+.leftT{
+    grid-area: 1/2/2/3;
 }
 
 div.cam {
     vertical-align: top;
     text-align: center;
-    padding: 0 2ch 1ch 1ch;
+    padding: 0 10px 1ch 10px;
     width: fit-content;
+}
+
+.rightC{
     grid-area: 1/2/2/3;
+}
+
+.leftC{
+    grid-area: 1/1/2/2;
 }
 
 .cam img {
