@@ -1,0 +1,53 @@
+h1{
+    padding-left: 10px;
+}
+
+h2 {
+    padding-left: 10px;
+}
+
+.section{
+    height: fit-content;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+    align-items: start;
+}
+
+.text {
+    grid-area: 1/1/2/2;
+    height: fit-content;
+    padding-left: 10px;
+}
+
+div.cam {
+    vertical-align: top;
+    text-align: center;
+    padding: 0 2ch 1ch 1ch;
+    width: fit-content;
+    grid-area: 1/2/2/3;
+}
+
+.cam img {
+    padding-bottom: 10px;
+    width: 21ch;
+}
+
+.cam span { /*Camera name*/
+    display: block;
+}
+
+@media screen and (max-width: 600px){ /* CHANGE WHEN TEXT FINISHED*/
+    .text {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
+    div.cam {
+        padding-left: 10px;
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    /*bild volle breite?*/
+}
